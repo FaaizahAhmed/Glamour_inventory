@@ -20,7 +20,7 @@ You'll need Node.js and MongoDB installed. MongoDB should be running on port 270
 npm install
 
 # install backend deps
-cd server
+cd Glamour_Inventory_backend
 npm install
 cd ..
 
@@ -28,7 +28,7 @@ cd ..
 mongod
 
 # start the backend (separate terminal)
-cd server
+cd Glamour_Inventory_backend
 npm run dev
 
 # start the frontend (separate terminal)
@@ -46,11 +46,5 @@ Backend API: `http://localhost:5000`
 - Nodemailer for email alerts
 - Gemini API for AI chat (falls back to rule-based smart mode if unavailable)
 
-## Folder layout
 
-```
-sparkle-shelf-smart/
-├── src/          # frontend (React)
-├── server/       # backend (Express)
-└── docs/         # setup guides and notes
 ```
