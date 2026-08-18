@@ -1,6 +1,6 @@
 # Glamour Inventory
 
-A makeup stock management system built as a final year project. It lets you track inventory, manage suppliers and categories, get low-stock email alerts, and ask an AI assistant questions about your stock — all from one place.
+A makeup stock management system built as my final year dissertation project at the University of Westminster. It lets you track inventory, manage suppliers and categories, get low-stock email alerts, and ask an AI assistant questions about your stock — all from one place.
 
 ## What it does
 
