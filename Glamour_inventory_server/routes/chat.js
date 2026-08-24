@@ -123,7 +123,7 @@ const callGemini = async (userMessage, history, inventoryContext) => {
   return data.candidates?.[0]?.content?.parts?.[0]?.text || 'Sorry, I could not generate a response.';
 };
 
-// POST /api/chat
+// POST /api/chat -> handles chatbot requests
 router.post('/', async (req, res) => {
   try {
     const { message, history = [] } = req.body;

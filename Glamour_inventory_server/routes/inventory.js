@@ -2,7 +2,7 @@ import express from 'express';
 import InventoryItem from '../models/InventoryItem.js';
 import { sendLowStockEmail, isLowStock } from '../services/emailService.js';
 import { requireAuth, requireRole } from '../middleware/auth.js';
-
+//manages all inventory items including, creating, adding, updating, deleting
 const router = express.Router();
 
 // Protect all inventory routes with authentication
@@ -76,7 +76,7 @@ router.post('/', async (req, res) => {
     });
     const savedItem = await newItem.save();
     
-    // Populate user info for response
+    // Populate user info for response 
     await savedItem.populate('category', 'name color icon');
     await savedItem.populate('supplier', 'name contact_person email');
     await savedItem.populate('createdBy', 'name username');

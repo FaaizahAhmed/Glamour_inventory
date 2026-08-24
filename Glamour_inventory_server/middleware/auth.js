@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
-
+//protects routes by verifying JWT tokens and checking user roles.
 export const requireAuth = async (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
@@ -16,7 +16,7 @@ export const requireAuth = async (req, res, next) => {
     if (!user) {
       return res.status(401).json({ success: false, message: 'User not found' });
     }
-
+//stores the authenticated user's data after verification
     req.user = user;
     next();
   } catch (error) {

@@ -2,7 +2,7 @@ import express from 'express';
 import Supplier from '../models/Supplier.js';
 import InventoryItem from '../models/InventoryItem.js';
 import { requireAuth, requireRole } from '../middleware/auth.js';
-
+//manages suppliers -> allows users to create, edit, delete and view suppliers. 
 const router = express.Router();
 
 // All routes require authentication

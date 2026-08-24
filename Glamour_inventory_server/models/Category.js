@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-
+//database backend
 const categorySchema = new mongoose.Schema(
   {
     name: {

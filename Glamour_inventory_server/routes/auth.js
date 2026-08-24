@@ -2,7 +2,7 @@ import express from 'express';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 import { requireAuth } from '../middleware/auth.js';
-
+// backend logic -> handles authentication such as login, logout
 const router = express.Router();
 
 // Generate JWT token

@@ -108,8 +108,9 @@ export const sendLowStockEmail = async (item, ownerEmail) => {
     return false;
   }
 };
-
+//checks if quantity is at or below min stock level (uses 10 as default if min_stock_level is not set)
 export const isLowStock = (quantity, minStockLevel) => {
   const min = minStockLevel ?? 10;
   return quantity <= min;
 };
+

@@ -1,7 +1,7 @@
 import express from 'express';
 import User from '../models/User.js';
 import { requireAuth, requireRole } from '../middleware/auth.js';
-
+//allows admins to manage user accounts, including creating new users, updating existing users, and deleting users
 const router = express.Router();
 
 // All user management routes require authentication + admin role

@@ -2,7 +2,7 @@ import express from 'express';
 import Category from '../models/Category.js';
 import InventoryItem from '../models/InventoryItem.js';
 import { requireAuth, requireRole } from '../middleware/auth.js';
-
+//handles product categories -> allows users to create, edit, delete and view
 const router = express.Router();
 
 // All routes require authentication
